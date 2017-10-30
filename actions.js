@@ -6,7 +6,7 @@ const ADD_COMMENT = 'CREATE_COMMENT',
     THUMB_UP_COMMENT = 'THUMB_UP_COMMENT',
     THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
-addComment = text => {
+const addComment = text => {
     return {
         type: ADD_COMMENT,
         text,
@@ -14,7 +14,7 @@ addComment = text => {
     }
 }
 
-editComment = (text, id) => {
+const editComment = (text, id) => {
     return {
         type: EDIT_COMMENT,
         text,
@@ -22,14 +22,14 @@ editComment = (text, id) => {
     }
 }
 
-removeComment = id => {
+const removeComment = id => {
     return {
         type: REMOVE_COMMENT,
         id
     }
 }
 
-thumbUpComment = (id, likes) => {
+const thumbUpComment = (id, likes) => {
     return {
         type: THUMB_UP_COMMENT,
         id,
@@ -37,7 +37,7 @@ thumbUpComment = (id, likes) => {
     }
 }
 
-thumbDownComment = (id, dislikes) => {
+const thumbDownComment = (id, dislikes) => {
     return {
         type: THUMB_DOWN_COMMENT,
         id,
